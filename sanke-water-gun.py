@@ -11,7 +11,7 @@ def swg():
             break
         print("   ",dict1[user])
         cpu=random.randint(1,3)
-        print("Cpu:",cpu)
+        print("CPU:",cpu)
         print("   ",dict1[cpu])
         list1.append(dict1[user])
         list1.append(dict1[cpu])
@@ -21,21 +21,21 @@ def swg():
         elif(list1[0]=='Snake' and list1[1]=='Water' or list1[0]=='Water' and list1[1]=='Snake'):
             print("Snake drinks water")
             if(user==1 and cpu==2):
-                print("You won")
+                print("You Won")
             elif(cpu==1 and user==2):
-                print("cpu won")
+                print("CPU Won")
         elif(list1[0]=='Snake' and list1[1]=='Gun' or list1[0]=='Gun' and list1[1]=='Snake'):
             print("Gun shots snake")
             if(user==1 and cpu==3):
-                print("cpu won")
+                print("CPU Won")
             elif(cpu==1 and user==3):
-                print("you won")
+                print("You Won")
         elif(list1[0]=='Water' and list1[1]=='Gun' or list1[0]=='Gun' and list1[1]=='Water'):
             print("Water falls upon Gun")
             if(user==2 and cpu==3):
-                print("you won")
+                print("You Won")
             elif(cpu==2 and user==3):
-                print("cpu won")
+                print("CPU Won")
         swg()
 swg()
     
